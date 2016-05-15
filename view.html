@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>统一建模语言理论在线测试</title>
+</head>
+<p>
+<h5>西安软件服务外包学院
+    <hr/>
+</h5>
+<body>
+<section>
+    <header>
+        <h1 align="center">统一建模语言理论测试</h1>
+    </header>
+    <tr>
+        <h4>
+            考试科目：<input type="button" name="考试科目" value="统一建模语言UML"/>
+            时间：<input type="button" name="时间" value="100分钟"/>
+            得分：<a id="result"></a></p>
+        </h4>
+    </tr>
+    <h4>
+        <tr>
+            班级：<input type="text" name="班级"/>
+            学号：<input type="text" name="学号"/>
+            姓名：<input type="text" name="姓名"/>
+        </tr>
+    </h4>
+</section>
+<br/>
+<section class="fillBlank">
+    <header>
+        <h4>一填空题</h4>
+    </header>
+    <ol>
+        <li>UML的中文全称是：<input type="text" name="1.1" id="fill_1"/></li>
+        <li><p>对象最突出的特征是：
+            <input type="text" name="fill_2" id="fill_2_1"/>,
+            <input type="text" name="fill_2" id="fill_2_2"/>,
+            <input type="text" name="fill_2" id="fill_2_3"/></p>
+    </ol>
+</section>
+<br/>
+<section class="select">
+    <header><h4>二 选择题</h4></header>
+    <ol>
+        <li>UML与软件工程的关系是：</li>
+        <input type="radio" id="select_1_1" name="select_1" value="A"/>(A)UML就是软件工程<br/>
+        <input type="radio" id="select_1_2" name="select_1" value="B"/>(B)UML参与到软件工程中软件开发过程的几个阶段<br/>
+        <input type="radio" id="select_1_3" name="select_1" value="C"/>(C)UML与软件工程无关<br/>
+        <input type="radio" id="select_1_4" name="select_1" value="D"/>(D)UML是软件工程的一部分<br/>
+        <li>java语言支持：</li>
+        <input type="radio" id="select_2_1" name="select_2" value="A"/>(A)单继承<br/>
+        <input type="radio" id="select_2_2" name="select_2" value="B"/>(B)多继承<br/>
+        <input type="radio" id="select_2_3" name="select_2" value="C"/>(C)单继承和多继承都支持<br/>
+        <input type="radio" id="select_2_4" name="select_2" value="D"/>(D)单继承和多继承都不支持<br/>
+    </ol>
+</section>
+<br/>
+<section class="selectMore">
+    <header>
+        <h4>三 多选题</h4>
+    </header>
+    <ol>
+        <li>用例的粒度分为以下哪三种：</li>
+        <input type="checkbox" id="selectMore_1_1" name="selectMore_1" value="A"/>(A)概述级<br/>
+        <input type="checkbox" id="selectMore_1_2" name="selectMore_1" value="B"/>(B)需求级<br/>
+        <input type="checkbox" id="selectMore_1_3" name="selectMore_1" value="C"/>(C)用户目标级<br/>
+        <input type="checkbox" id="selectMore_1_4" name="selectMore_1" value="D"/>(D)子功能级<br/>
+
+
+        <li>类图由以下哪三部分组成：</li>
+        <input type="checkbox" id="selectMore_2_1" name="selectMore_2" value="A"/>(A)名称(Name)<br/>
+        <input type="checkbox" id="selectMore_2_2" name="selectMore_2" value="B"/>(B)属性(Attribute)<br/>
+        <input type="checkbox" id="selectMore_2_3" name="selectMore_2" value="C"/>(C)操作(Operation)<br/>
+        <input type="checkbox" id="selectMore_2_4" name="selectMore_2" value="D"/>(D)方法(Function)<br/>
+
+    </ol>
+</section>
+<br/>
+<section class="judge">
+    <header><h4>四 判断题</h4></header>
+    <ol>
+        <li>用例图只是用于和客户交流沟通的，用于确定需求：</li>
+        <p><input type="radio" id="judge_1_1" name="judge_1" value="Yes"/>Yes
+            <input type="radio" id="judge_1_2" name="judge_1" value="No"/>No
+        </p>
+        <li>在状态图中，终止状态在状态图中允许有任意多个：</li>
+        <p><input type="radio" id="judge_2_1" name="judge_2" value="Yes"/>Yes
+            <input type="radio" id="judge_2_2" name="judge_2" value="No"/>No
+        </p>
+    </ol>
+</section>
+<br/>
+<section class="shortAnswer">
+    <header>
+        <h4>
+            五简答题（每题4分，共20分）
+        </h4>
+    </header>
+    <p>1.简述什么是模型以及模型的表现形式：</p>
+    <textarea rows="10" cols="150" id="shortAnswer"></textarea>
+</section>
+<script type="text/javascript" src="./calculateScore.js"></script>
+<input type="button" value="提交" id="finish" onclick="buildScore()">
+
+
+</body>
+
+</html>
